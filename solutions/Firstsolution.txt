@@ -20,11 +20,13 @@ so each guest should end up, before drinking, with 2/N amount of water in their 
 
 what a deadlock would be
 in distributed systems, deadlocks occur when processes cannot proceed because they’re  waiting for each other. So here deadlock could happen if the guests foughtover who places their cups first or last, if they raced and someone lost and then refused to place their cup on the 
-table (so the game cannot resume) or if they refused to cooperate altogether. but the agreement to share water in this case would ensure progress, because everyone has something to gain (a limited but guaranteed portion of water)
+table (so the game cannot resume) or if they refused to cooperate altogether. but the agreement to share water in this case would ensure progress, because everyone has something to gain (a limited but guaranteed portion of water). a timeout like in distributed systems could also be enforced
+to influence the participants into acting more honestly toward solving the riddle or conforming to the agreement.
 
 cheating or what would represent byzantine fault
 such faults is distributed systems would occur when processes act maliciously or unpredictably. here, guests might cheat by drinking more than their share or breaking the rules
-so to counteract cheating, like we do in blockchain, we employ a consensus mechanism and ensure that all parties agree to the agreed plan. here, peer pressure amongst the group would mirror monitoring in IT and discourage malicious or erratic behaviour by the guests.
+so to counteract cheating, like we do in blockchain, we employ a consensus mechanism and ensure that all parties conform to the agreed plan. additionally, we could name the first and last guests to put their cups on the table according to trustworthiness if we assume that we know them, or even allow 
+the group of guests itself to appoint the head and tail of cups according to the same value.so here, peer pressure amongst the group would mirror monitoring in IT and discourage malicious or erratic behaviour by the guests.
 
 other similarities to distributed systems
 here, the idea  of pouring water to other cups for drinking somehow resembles token-passing algorithms, like when a token is passed to another process to grant that process access to the resource.
