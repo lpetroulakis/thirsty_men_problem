@@ -1,1 +1,33 @@
+before i begin, i wish to state that the name and email under which i have completed the internship form are Loukas Petroulakis and lucas.petroulakis@gmail.com
+
+this riddle seems like a parallel of the concepts related to distributed algorithms which we studied back in uni, like resource allocation and sharing fairness. That would mean that the guests can reach an agreement that is beneficial to all, 
+if all of them behave honestly and according to the plan
+
+the resource allocation problem
+
+in this riddle, limited resources like cpu time or memory are paralleled by the only resource we have here which is water so
+
+- water or the water bottle is the limited resource
+- we could say that the guests represent processes competing for memory
+- the cups represent intermediary states for accessing the resource
+
+
+fair sharing 
+a key principle in distributed systems is to ensure fairness. that means that no single process takes up all of the resource. here it means that no two guests should be the sole receivers of water, and all guests should eventually get some water to drink.
+However, there are no rounds here or scheduling like in IT where guests can take turns in drinking, because the resource is depleted during th first pouring. but on the other hand, even though the rules state that a guest can only drink from their cup, they do not prohibit them from 
+pouring some of their water into other cups after the initial pouring of the guest occurs. That means that the guests can reach an agreement where they each pour a specific portion of their water into the other guests' cups.
+so each guest should end up, before drinking, with 2/N amount of water in their cups, before anyone drinking.
+
+what a deadlock would be
+in distributed systems, deadlocks occur when processes cannot proceed because they’re  waiting for each other. So here deadlock could happen if the guests foughtover who places their cups first or last, if they raced and someone lost and then refused to place their cup on the 
+table (so the game cannot resume) or if they refused to cooperate altogether. but the agreement to share water in this case would ensure progress, because everyone has something to gain (a limited but guaranteed portion of water)
+
+cheating or what would represent byzantine fault
+such faults is distributed systems would occur when processes act maliciously or unpredictably. here, guests might cheat by drinking more than their share or breaking the rules
+so to counteract cheating, like we do in blockchain, we employ a consensus mechanism and ensure that all parties agree to the agreed plan. here, peer pressure amongst the group would mirror monitoring in IT and discourage malicious or erratic behaviour by the guests.
+
+other similarities to distributed systems
+here, the idea  of pouring water to other cups for drinking somehow resembles token-passing algorithms, like when a token is passed to another process to grant that process access to the resource.
+also, resource optimization strategies can be reflected by the idea of how we can maximize the use of the limited resource of water to meet everyone's needs (thirst), where thirst could represent workload.
+
 
